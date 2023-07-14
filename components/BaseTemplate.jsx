@@ -27,7 +27,7 @@ import { AppContext } from '@/context/AppContext';
 import LoginRedirect from '@/components/LoginPage';
 import { redirect } from 'next/navigation';
 import { useRouter, usePathname } from 'next/navigation';
-import useLocalStorage from "use-local-storage";
+// import useLocalStorage from "use-local-storage";
 
 
 const BaseTemplate = (props) => {

@@ -1,5 +1,5 @@
 import { AppContextProvider } from "@/context/AppContext.js";
-import { RouteContextProvider } from "@/context/routeContext";
+// import { RouteContextProvider } from "@/context/routeContext";
 import './globals.css'
 import { Inter, Kanit } from 'next/font/google'
 import Head from 'next/head'
@@ -25,9 +25,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
 
       <AppContextProvider>
-        <RouteContextProvider>
+        {/* <RouteContextProvider> */}
         <body className={kanit.className} style={{ height: "100%" }}>{children}</body>
-        </RouteContextProvider>
+        {/* </RouteContextProvider> */}
       </AppContextProvider>
     </html>
   )
